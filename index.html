@@ -10,19 +10,23 @@
     <!-- css -->
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="css/fullview.css"/>
+    <link rel="stylesheet" href="css/pre_splash.css"/>
   </head>
   <body onresize="responsive()">
     <section id="contenedor">
       <div id="full">
-          <button id="fullwiev" onclick="openFullscreen()" >
-            <i class="fa fa-expand"></i>
-          </button>
-        </div><!-- full -->
-        <section class="flex">
-      <div >
+        <button id="fullwiev" onclick="openFullscreen()" >
+          <i class="fa fa-expand"></i>
+        </button>
+      </div><!-- full -->
+      <section id="pre_splash">
+        <div class="loader">Loading...</div> 
+      </section><!-- pre-splash -->
+      <section class="flex" style="display: none;">
+        <div>
           <div id="idioma_div"></div>
           <div id="responsive_div"></div>
-      </div>
+        </div>
       </section>
     </section>
   </body>

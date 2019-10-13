@@ -9,12 +9,14 @@ readme de el webapp
 - [x] detectar tamaño de dispositivo
 - [x] contenido ocupando toda la pantalla
 - [x] boton fullview
+- [x] pre-carga del splash
 - [ ] mostrar el splah
-- [ ] pre-carga del splash
 - [ ] menu principal ( opcional para algunos proyectos)
 
 ## changelog
 
+* **[v 0.5]** `2019-10-12`   
+ `added` pre carga de el splash.
 * **[v 0.4]** `2019-10-11`   
  `added` boton de maximixar.
 * **[v 0.3]** `2019-10-11`   
