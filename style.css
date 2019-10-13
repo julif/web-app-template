@@ -1,0 +1,14 @@
+body{
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+#contenedor{
+  background-color: #55557b;
+  color: white;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

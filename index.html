@@ -7,18 +7,18 @@
     <script src="js/idioma.js"></script>
     <script src="js/responsive.js"></script> 
     <!-- css -->
-    <!-- <link rel="stylesheet" href="style.css"/> -->
-    <script type="text/javascript">// tamaño
-  var plataform;
-  responsive();
-
-
-</script>
+    <link rel="stylesheet" href="style.css"/> 
   </head>
   <body onresize="responsive()">
+    <section id="contenedor">
+      <div>
+          <div id="idioma_div"></div>
+          <div id="responsive_div"></div>
+      </div>
+    </section>
   </body>
      <script type="text/javascript">
-
-         document.body.innerHTML = "Idioma: "+ idioma; 
+      document.getElementById("idioma_div").innerHTML = "Idioma: "+ idioma;
+      document.getElementById("responsive_div").innerHTML = "Resolucion: "+ plataform; 
     </script>
 </html>
