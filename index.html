@@ -4,15 +4,21 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width"/>
     <!-- javascript -->
-    <script src="js/idioma.js"></script> 
+    <script src="js/idioma.js"></script>
+    <script src="js/responsive.js"></script> 
     <!-- css -->
     <!-- <link rel="stylesheet" href="style.css"/> -->
+    <script type="text/javascript">// tamaño
+  var plataform;
+  responsive();
+
+
+</script>
   </head>
-  <body>
+  <body onresize="responsive()">
   </body>
      <script type="text/javascript">
-      
+
          document.body.innerHTML = "Idioma: "+ idioma; 
-     
     </script>
 </html>
