@@ -4,12 +4,12 @@
 readme de el webapp
 
 ## Cosas por hacer
-
-- [x] Detectar idioma
-- [x] detectar tamaño de dispositivo
-- [x] contenido ocupando toda la pantalla
-- [x] boton fullview
-- [x] pre-carga del splash
+ 
+- [x] ~~Detectar idioma~~
+- [x] ~~detectar tamaÃ±o de dispositivo~~
+- [x] ~~contenido ocupando toda la pantalla~~
+- [x] ~~boton fullview~~
+- [x] ~~pre-carga del splash~~
 - [ ] mostrar el splah
 - [ ] menu principal ( opcional para algunos proyectos)
 
@@ -22,7 +22,7 @@ readme de el webapp
 * **[v 0.3]** `2019-10-11`   
  `added` la seccion "contenedor" ocupa toda la pantalla.
 * **[v 0.2]** `2019-10-10`   
- `added` detecta el tamaño de desktop tablet smartphone landsace y portrait.
+ `added` detecta el tamaÃ±o de desktop tablet smartphone landsace y portrait.
 * **[v 0.1]** `2019-10-10` 
- `added` filtro de Idioma,y solo el filtro para el idioma español con el ingles como default.
+ `added` filtro de Idioma,y solo el filtro para el idioma espaÃ±ol con el ingles como default.
 
