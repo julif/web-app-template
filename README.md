@@ -8,13 +8,15 @@ readme de el webapp
 - [x] Detectar idioma
 - [x] detectar tamaño de dispositivo
 - [x] contenido ocupando toda la pantalla
-- [ ] boton fullview
-- [ ] pre-carga del splash
+- [x] boton fullview
 - [ ] mostrar el splah
+- [ ] pre-carga del splash
 - [ ] menu principal ( opcional para algunos proyectos)
 
 ## changelog
 
+* **[v 0.4]** `2019-10-11`   
+ `added` boton de maximixar.
 * **[v 0.3]** `2019-10-11`   
  `added` la seccion "contenedor" ocupa toda la pantalla.
 * **[v 0.2]** `2019-10-10`   

@@ -3,22 +3,32 @@
     <title> webapp </title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width"/>
+    <script src="https://kit.fontawesome.com/83a06a6d8e.js" crossorigin="anonymous"></script>
     <!-- javascript -->
     <script src="js/idioma.js"></script>
     <script src="js/responsive.js"></script> 
     <!-- css -->
-    <link rel="stylesheet" href="style.css"/> 
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="css/fullview.css"/>
   </head>
   <body onresize="responsive()">
     <section id="contenedor">
-      <div>
+      <div id="full">
+          <button id="fullwiev" onclick="openFullscreen()" >
+            <i class="fa fa-expand"></i>
+          </button>
+        </div><!-- full -->
+        <section class="flex">
+      <div >
           <div id="idioma_div"></div>
           <div id="responsive_div"></div>
       </div>
+      </section>
     </section>
   </body>
      <script type="text/javascript">
       document.getElementById("idioma_div").innerHTML = "Idioma: "+ idioma;
       document.getElementById("responsive_div").innerHTML = "Resolucion: "+ plataform; 
     </script>
+    <script src="js/fullview.js"></script> 
 </html>
