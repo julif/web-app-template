@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="css/fullview.css"/>
     <link rel="stylesheet" href="css/pre_splash.css"/>
+    <link rel="stylesheet" href="css/mensaje_portrait-landscape.css"/>
   </head>
   <body onresize="responsive()">
     <section id="contenedor">
@@ -19,15 +20,22 @@
           <i class="fa fa-expand"></i>
         </button>
       </div><!-- full -->
-      <section id="pre_splash">
-        <div class="loader">Loading...</div> 
-      </section><!-- pre-splash -->
-      <section class="flex" style="display: none;">
-        <div>
-          <div id="idioma_div"></div>
-          <div id="responsive_div"></div>
-        </div>
-      </section>
+      <landscape>
+        <section id="pre_splash">
+          <div class="loader">Loading...</div> 
+        </section><!-- pre-splash -->
+        <section class="flex" style="display: none;">
+          <div>
+            <div id="idioma_div"></div>
+            <div id="responsive_div"></div>
+          </div>
+        </section>
+      </landscape>
+      <portrait>
+        <section class="flex" style="color: black;text-align: center;">
+          Please rotate your device! 
+        </section>
+      </portrait>
     </section>
   </body>
      <script type="text/javascript">
