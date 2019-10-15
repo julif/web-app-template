@@ -11,4 +11,6 @@ function responsive(){
   //avoidportrait();  (opcional)
 
   console.log(" plataforma : "+ plataform);
+
+  
 };

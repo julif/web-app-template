@@ -11,11 +11,15 @@ readme de el webapp
 - [x] boton fullview
 - [x] pre-carga del splash
 - [x] mensaje de rotar el dispositivo en portrait o landscape.
+- [x] bloquear orientacion en pantalla completa.
 - [ ] mostrar el splah
 - [ ] menu principal ( opcional para algunos proyectos)
 
 ## changelog
 
+* **[v 0.7]** `2019-10-14`   
+ `added` bloquear orientacion en pantalla completa.
+ `changed` se cambio todo el sistema de el boton de maximixar para hacerlo compatible con el orientation.lock.
 * **[v 0.6]** `2019-10-14`   
  `added` mensaje de de rotate your device en portrait.
 * **[v 0.5]** `2019-10-12`   

@@ -1,35 +1,36 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title> webapp </title>
+    <title>Webapp</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width"/>
     <script src="https://kit.fontawesome.com/83a06a6d8e.js" crossorigin="anonymous"></script>
     <!-- javascript -->
     <script src="js/idioma.js"></script>
-    <script src="js/responsive.js"></script> 
+    <script src="js/responsive.js"></script>
+    <script src="js/lock.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="css/fullview.css"/>
     <link rel="stylesheet" href="css/pre_splash.css"/>
-    <link rel="stylesheet" href="css/mensaje_portrait-landscape.css"/>
+    <style>
+     
+
+
+    </style>
+    
   </head>
-  <body onresize="responsive()">
+  <body >
     <section id="contenedor">
       <div id="full">
-        <button id="fullwiev" onclick="openFullscreen()" >
-          <i class="fa fa-expand"></i>
+        <button id="fullwiev" onclick="lock('landscape')" >
+            <i class="fa fa-expand"></i>
         </button>
-      </div><!-- full -->
+      </div>
       <landscape>
         <section id="pre_splash">
           <div class="loader">Loading...</div> 
         </section><!-- pre-splash -->
-        <section class="flex" style="display: none;">
-          <div>
-            <div id="idioma_div"></div>
-            <div id="responsive_div"></div>
-          </div>
-        </section>
       </landscape>
       <portrait>
         <section class="flex" style="color: black;text-align: center;">
@@ -38,9 +39,4 @@
       </portrait>
     </section>
   </body>
-     <script type="text/javascript">
-      document.getElementById("idioma_div").innerHTML = "Idioma: "+ idioma;
-      document.getElementById("responsive_div").innerHTML = "Resolucion: "+ plataform; 
-    </script>
-    <script src="js/fullview.js"></script> 
 </html>

@@ -4,18 +4,11 @@
 #pre_splash {
   
   background-color: #28334a;
-  background-size: cover;
-  background-position: top;
-   display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
- 
-    background-position: center;
-    background-blend-mode: normal;
-    background-size: cover;
-     display: flex;
-     z-index: 4;
+ /* z-index: 4;*/
   
   /*IMPORTANTE*/
   height: 100vh;
