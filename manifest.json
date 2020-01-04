@@ -1,0 +1,29 @@
+{
+  "name": "webapp",
+  "short_name": "wp",
+  "theme_color": "#111c29",
+  "background_color": "#2196f3",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "Scope": "/",
+  "start_url": "index.html?launcher=true",
+  // "icons": null,
+  "icons": [{
+    "src": "img/apple-touch-icon-120x120.png",
+    "sizes": "128x128",
+    "type": "image/png"
+  }, {
+    "src": "img/apple-touch-icon-144x144.png",
+    "sizes": "142x142",
+    "type": "image/png"
+  }, {
+    "src": "img/favicon-196x196.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }, {
+    "src": "img/mstile-310x310.png",
+    "sizes": "384x384",
+    "type": "image/png"
+  }],
+  "splash_pages": null
+}

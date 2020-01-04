@@ -1,5 +1,5 @@
 
-# Webapp [v 0.6]
+# Webapp [v 0.9]
 
 readme de el webapp
 
@@ -13,12 +13,16 @@ readme de el webapp
 - [x] mensaje de rotar el dispositivo en portrait o landscape.
 - [x] bloquear orientacion en pantalla completa.
 - [x] mostrar el splah al menos por  3 segundos.
+- [x] convertir la web-app en una progreesive web-app
 - [ ] splah-art
 - [ ] menu principal ( opcional para algunos proyectos)
 
 ## changelog
 
-* **[v 0.8]** `2020-1-4`
+* **[v 0.9]** `2020-1-4` 
+ - `added` favicons. 
+ - `added` manisfest.json. 
+* **[v 0.8]** `2020-1-4` 
  - `added` fade-div.   
  - `added` seccion splash-art vacia.   
  - `added` funcion que a los  segundos quita el splash y llama a la seccion splash-art.
