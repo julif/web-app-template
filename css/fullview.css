@@ -29,7 +29,7 @@
 }
 #fullwiev:hover { color: #1e90ff;}
 
-.fa-expand{font-size: 20px;}
+.fa-expand{font-size: 25px;}
 /*esconder el boton en pantalla completa */
 
   #contenedor:requestFullscreen >  #full #fullwiev {display: none;}

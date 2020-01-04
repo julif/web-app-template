@@ -4,7 +4,8 @@
     <title>Webapp</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width"/>
-    <script src="https://kit.fontawesome.com/83a06a6d8e.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/83a06a6d8e.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- javascript -->
     <script src="js/idioma.js"></script>
     <script src="js/responsive.js"></script>
@@ -12,10 +13,14 @@
     <!-- css -->
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="css/fullview.css"/>
-    <link rel="stylesheet" href="css/pre_splash.css"/>
+    <link rel="stylesheet" href="css/splash.css"/>
     <style>
      
-
+     .hidden {
+	visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.5s, opacity 0.5s linear;
+}
 
     </style>
     
@@ -28,9 +33,12 @@
         </button>
       </div>
       <landscape>
-        <section id="pre_splash">
+        <section id="splash">
           <div class="loader">Loading...</div> 
-        </section><!-- pre-splash -->
+        </section><!-- splash -->
+      <section id="splash-art" style="display: none;">
+        splash art
+      </section><!-- splash-art -->
       </landscape>
       <portrait>
         <section class="flex" style="color: black;text-align: center;">
@@ -38,5 +46,35 @@
         </section>
       </portrait>
     </section>
+    <script>
+      var splash = document.getElementById("splash");
+      var splash_art = document.getElementById("splash-art");
+    
+    </script>
+    <script>
+      myFunction();
+      function myFunction() {
+        setInterval(function(){ 
+          // alert("Hello"); 
+          // document.getElementById("splash").style.display = "none";document.getElementById("splash-art").style.display = "inherit";
+          fadediv(splash, splash_art); }, 3000);
+      }
+      </script>
+      <script>
+      
+        // esto podria ir en su propio js
+  function fadediv(p1, p2){
+    p1.style.zIndex = "3"; // 1- div1 adelante
+    p2.style.zIndex = "1";// 2- div2  atras
+    p2.style.display="flex";// 3- hacer que aparezca el div de atras
+    p2.classList.remove("hidden");// 4- asegurarse que no esta invisible
+    p1.classList.add("hidden");// 5- fade effect
+     
+    var myVar = setTimeout(ocultardiv, 500);// 6- after fade
+    function ocultardiv() { p1.style.display="none";}
+   
+  }
+      </script>
   </body>
+ 
 </html>
