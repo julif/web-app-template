@@ -37,6 +37,7 @@
     <script src="js/responsive.js"></script>
     <script src="js/lock.js"></script>
     <script src="js/fade_div.js"></script>
+     
    
     <!-- css -->
     <link rel="stylesheet" href="style.css"/>
@@ -52,6 +53,13 @@
   transition: visibility 0s 0.5s, opacity 0.5s linear;
 }
 
+ .version { position: absolute;
+    z-index: 10;
+    right: 10px;
+    bottom: 10px;
+    color: white;
+
+}
     </style>
     
   </head>
@@ -65,18 +73,10 @@
       <landscape>
         <section id="splash">
           <div class="loader">Loading...</div> 
-            <div id="version" style =" position: absolute;
-    z-index: 10;
-    right: 10px;
-    bottom: 10px;
-    color: white;"   >v 0.9.1</div>
+            <div class="version"></div>
         </section><!-- splash -->
       <section id="splash-art">
-        <div class="version" style =" position: absolute;
-    z-index: 10;
-    right: 10px;
-    bottom: 10px;
-    color: white;"   ></div>
+        <div class="version" ></div>
        
       </section><!-- splash-art -->
       </landscape>
@@ -170,7 +170,7 @@ if (window.matchMedia('(display-mode: fullscreen)').matches) {
             });
           }
           </script>
-           <script src="js/version.js"></script>
+          <script src="js/version.js"></script>
   </body>
  
 </html>

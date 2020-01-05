@@ -1,5 +1,5 @@
 
-# Webapp-template [v 0.9.1]
+# Webapp-template [v 0.9.1.1]
 
 readme de el webapp
 
@@ -20,7 +20,9 @@ readme de el webapp
 - [ ] menu principal ( opcional para algunos proyectos)
 
 ## changelog
-
+* **[v 0.9.1.1]** `2020-1-5` 
+ - `added` css para version.
+ - `changed` codigo javascript cambiado por uno query mas eficiente.
 * **[v 0.9.1]** `2020-1-5` 
  - `added` imagen provisoria para el splash-art.
  - `added` version.js todos los divs con la clase version tienen el mismo innerHTML.

@@ -1,5 +1,2 @@
-var items = document.getElementById( 'version' ),
-divs = document.getElementsByClassName( 'version' );
-[].slice.call( divs ).forEach(function ( div ) {
-    div.innerHTML = items.innerHTML;
-}); 
+//version
+$("div.version").html("[v 0.9.1.1]");
