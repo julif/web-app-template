@@ -19,10 +19,11 @@ readme de el webapp
 - [ ] splash-art mobile o desktop dependiendo de el dispositivo.
 - [ ] menu principal ( opcional para algunos proyectos)
 
-## changelog
+## changelog v 0.9.1.1
 * **[v 0.9.1.1]** `2020-1-5` 
  - `added` css para version.
  - `changed` codigo javascript cambiado por uno query mas eficiente.
+ - `changed` el nombre de la app ahora es webapp-template.
 * **[v 0.9.1]** `2020-1-5` 
  - `added` imagen provisoria para el splash-art.
  - `added` version.js todos los divs con la clase version tienen el mismo innerHTML.

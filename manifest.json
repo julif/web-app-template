@@ -1,6 +1,6 @@
 {
-  "name": "webapp",
-  "short_name": "wp",
+  "name": "webapp-template",
+  "short_name": "wp-template",
   "theme_color": "#111c29",
   "background_color": "#2196f3",
   "display": "fullscreen",
