@@ -37,6 +37,7 @@
     <script src="js/responsive.js"></script>
     <script src="js/lock.js"></script>
     <script src="js/fade_div.js"></script>
+    <script src="js/version.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="css/fullview.css"/>
@@ -44,7 +45,7 @@
     <link rel="stylesheet" href="css/splash_art.css"/>
 
     <style>
-     
+     body{font-family: "proxima-nova",sans-serif;}
      .hidden {
 	visibility: hidden;
   opacity: 0;
@@ -64,8 +65,18 @@
       <landscape>
         <section id="splash">
           <div class="loader">Loading...</div> 
+            <div id="version" style =" position: absolute;
+    z-index: 10;
+    right: 10px;
+    bottom: 10px;
+    color: white;"   >v 0.9.1</div>
         </section><!-- splash -->
       <section id="splash-art">
+        <div class="version" style =" position: absolute;
+    z-index: 10;
+    right: 10px;
+    bottom: 10px;
+    color: white;"   ></div>
        
       </section><!-- splash-art -->
       </landscape>
@@ -78,6 +89,17 @@
     <script>
       var splash = document.getElementById("splash");
       var splash_art = document.getElementById("splash-art");
+
+
+
+/*   var items = "v.o.1",
+    divs = document.getElementsByClassName( 'version' );
+
+[].slice.call( divs ).forEach(function ( div ) {
+    div.innerHTML = items;
+ */
+
+ 
     
     </script>
     <script>

@@ -14,13 +14,16 @@ readme de el webapp
 - [x] bloquear orientacion en pantalla completa.
 - [x] mostrar el splah al menos por  3 segundos.
 - [x] convertir la web-app en una progreesive web-app
-- [ ] splah-art
+- [x] splah-art
+- [ ] pre-loader para la imagen del slpash-art en el splash.
+- [ ] splash-art mobile o desktop dependiendo de el dispositivo.
 - [ ] menu principal ( opcional para algunos proyectos)
 
 ## changelog
 
 * **[v 0.9.1]** `2020-1-5` 
  - `added` imagen provisoria para el splash-art.
+ - `added` version.js todos los divs con la clase version tienen el mismo innerHTML.
  - `changed` fade-div ahora esta en su propio archivo js.
 * **[v 0.9]** `2020-1-4` 
  - `added` favicons. 
