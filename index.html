@@ -36,10 +36,12 @@
     <script src="js/idioma.js"></script>
     <script src="js/responsive.js"></script>
     <script src="js/lock.js"></script>
+    <script src="js/fade_div.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="css/fullview.css"/>
     <link rel="stylesheet" href="css/splash.css"/>
+    <link rel="stylesheet" href="css/splash_art.css"/>
 
     <style>
      
@@ -63,8 +65,8 @@
         <section id="splash">
           <div class="loader">Loading...</div> 
         </section><!-- splash -->
-      <section id="splash-art" style="display: none;">
-        splash art
+      <section id="splash-art">
+       
       </section><!-- splash-art -->
       </landscape>
       <portrait>
@@ -89,23 +91,12 @@
       </script>
       <script>
       
-        // esto podria ir en su propio js
-  function fadediv(p1, p2){
-    p1.style.zIndex = "3"; // 1- div1 adelante
-    p2.style.zIndex = "1";// 2- div2  atras
-    p2.style.display="flex";// 3- hacer que aparezca el div de atras
-    p2.classList.remove("hidden");// 4- asegurarse que no esta invisible
-    p1.classList.add("hidden");// 5- fade effect
-     
-    var myVar = setTimeout(ocultardiv, 500);// 6- after fade
-    function ocultardiv() { p1.style.display="none";}
-   
-  }
+  
       </script>
       <script>
         let deferredPrompt;
         const addBtn = document.querySelector('.add-button');
-        addBtn.style.display = 'none';
+        // addBtn.style.display = 'none';
         </script>
       <script>
 
@@ -146,6 +137,7 @@ if (window.matchMedia('(display-mode: fullscreen)').matches) {
           });
         });
         </script>
+        <!-- service worker -->
           <script type="text/javascript">
   
             if (navigator.serviceWorker) {

@@ -1,5 +1,5 @@
 
-# Webapp [v 0.9]
+# Webapp-template [v 0.9.1]
 
 readme de el webapp
 
@@ -19,6 +19,9 @@ readme de el webapp
 
 ## changelog
 
+* **[v 0.9.1]** `2020-1-5` 
+ - `added` imagen provisoria para el splash-art.
+ - `changed` fade-div ahora esta en su propio archivo js.
 * **[v 0.9]** `2020-1-4` 
  - `added` favicons. 
  - `added` manisfest.json. 

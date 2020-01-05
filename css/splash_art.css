@@ -1,0 +1,6 @@
+#splash-art{
+  display: none;
+  background-image: url(../img/splash-art.jpg);
+  background-size: cover;
+  background-position: center;
+}

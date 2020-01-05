@@ -9,6 +9,7 @@
   right: 0px;
   transition: 0.5s;
   -webkit-transition: 0.5s;
+  z-index: 10;
 }
 #fullwiev {
   padding: 15px;
