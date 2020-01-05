@@ -1,7 +1,7 @@
 
 # Webapp-template [v 0.10]
 
-readme de el webapp
+readme de el webapp #0a0f1b
 
 ## Cosas por hacer
 
@@ -22,6 +22,9 @@ readme de el webapp
 ## changelog 
 * **[v 0.10]** `2020-1-5` 
  - `changed` se cambiaron todos los iconos.
+ - `changed` se cambio la imagen del splash.
+ - `changed` el splash dura 4s en lugar de 3s.
+
 * **[v 0.9.1.1]** `2020-1-5` 
  - `added` css para version.
  - `changed` codigo javascript cambiado por uno query mas eficiente.

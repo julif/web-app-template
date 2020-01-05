@@ -60,6 +60,17 @@
     color: white;
 
 }
+.icon {
+   fill: black; 
+}
+#splash { 
+  /* background-color: #053a4a!important; */
+   background-color: black!important; 
+  }
+  #splash img{ 
+ height: 40%;
+ width: auto;
+  }
     </style>
     
   </head>
@@ -72,7 +83,8 @@
       </div>
       <landscape>
         <section id="splash">
-          <div class="loader">Loading...</div> 
+          <!-- <div class="loader">Loading...</div>  -->
+          <img src="img/julif.svg" >
             <!-- <div class="version"></div> -->
         </section><!-- splash -->
       <section id="splash-art">
@@ -108,7 +120,8 @@
         setInterval(function(){ 
           // alert("Hello"); 
           // document.getElementById("splash").style.display = "none";document.getElementById("splash-art").style.display = "inherit";
-          fadediv(splash, splash_art); }, 3000);
+          fadediv(splash, splash_art);
+         }, 4000);
       }
       </script>
       <script>
