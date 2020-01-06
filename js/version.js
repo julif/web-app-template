@@ -1,2 +1,2 @@
 //version
-$("div.version").html("v 0.10");
+$("div.version").html("v 0.10.1");

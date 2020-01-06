@@ -70,11 +70,16 @@
   #splash img{ 
  height: 40%;
  width: auto;
-  }
+  }.preloader {
+    margin-left: 15000px;
+    position: fixed;
+    /* font-family: Franklin Gothic Demi; */
+}
+
     </style>
     
   </head>
-  <body >
+  <body onresize="responsive(); iniciar();">
     <section id="contenedor">
       <div id="full">
         <button id="fullwiev" onclick="lock('landscape')" >
@@ -82,6 +87,7 @@
         </button>
       </div>
       <landscape>
+        <div class="preloader"><img src="img/splash-art.jpg" onload="splash_img_loaded()"  width="100px;"></div>
         <section id="splash">
           <!-- <div class="loader">Loading...</div>  -->
           <img src="img/julif.svg" >
@@ -115,14 +121,56 @@
     
     </script>
     <script>
-      myFunction();
-      function myFunction() {
-        setInterval(function(){ 
-          // alert("Hello"); 
-          // document.getElementById("splash").style.display = "none";document.getElementById("splash-art").style.display = "inherit";
-          fadediv(splash, splash_art);
-         }, 4000);
+
+
+    var loaded_slpash_img = false;
+
+      function splash_img_loaded(){
+         loaded_slpash_img = true;
       }
+
+
+   
+  iniciar();
+function iniciar() {      
+
+if( plataform == "desktop" || plataform == "tablet"|| plataform == "landscape" || plataform == "smartphone landsape" ){ iniciar_splash(); }
+
+ //iniciar_splash(); 
+
+
+}
+
+      
+
+      var img_splash_counter = 0;
+      function iniciar_splash() {
+
+      
+          setInterval(function(){ 
+            if (img_splash_counter>10) { 
+              // alert("la aplicacion esta tomando demasiado tiempo para cargar, actualizando la app");
+              // location.reload();
+              window.location.reload(false); 
+            }
+
+             if (loaded_slpash_img == true) { fadediv(splash, splash_art); }
+
+             else if(loaded_slpash_img == false){
+              //alert(" recargar ");
+              img_splash_counter++;
+              console.log("carga de img_splash fallido N:"+img_splash_counter);
+              iniciar_splash();
+            }
+         
+         }, 4000);
+
+       
+        
+        
+      }//iniciar_splash
+
+
       </script>
       <script>
       

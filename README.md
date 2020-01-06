@@ -1,5 +1,5 @@
 
-# Webapp-template [v 0.10]
+# Webapp-template [v 0.10.1]
 
 readme de el webapp #0a0f1b
 
@@ -15,11 +15,16 @@ readme de el webapp #0a0f1b
 - [x] mostrar el splah al menos por  3 segundos.
 - [x] convertir la web-app en una progreesive web-app
 - [x] splah-art
-- [ ] pre-loader para la imagen del slpash-art en el splash.
+- [x] pre-loader para la imagen del slpash-art en el splash.
 - [ ] splash-art mobile o desktop dependiendo de el dispositivo.
 - [ ] menu principal ( opcional para algunos proyectos)
 
 ## changelog 
+* **[v 0.10.1]** `2020-1-5` 
+ - `added` preloader con la imagen de splash art.
+ - `added` funcion que revisa si la imagen del spash-art cargo, y en caso de no hacerlo durante 16 segundos actualiza la pagina
+ - `added` la misma funcion revisa si la imagen cargo muestra la seccion splash-art
+ - `added` si no es portrait inicia el splash.
 * **[v 0.10]** `2020-1-5` 
  - `changed` se cambiaron todos los iconos.
  - `changed` se cambio la imagen del splash.
