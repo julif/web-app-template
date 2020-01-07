@@ -134,11 +134,11 @@
 
    
   iniciar();
-   $(document).is(":fullscreen") { iniciar_splash();}
+ 
 
-//   ["fullscreenchange", "webkitfullscreenchange", "mozfullscreenchange", "msfullscreenchange"].forEach(
-//     eventType => document.addEventListener(eventType, yourCheckFunction, false)
-// );
+   ["fullscreenchange", "webkitfullscreenchange", "mozfullscreenchange", "msfullscreenchange"].forEach(
+     eventType => document.addEventListener(eventType, iniciar_splash(), false)
+     );
 
 function iniciar() {      
 
