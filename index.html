@@ -87,7 +87,7 @@
             <i class="fa fa-expand"></i>
         </button>
       </div>
-       <div class="preloader"><img src="img/splash-art.jpg" onload="splash_img_loaded()"  width="100px;"></div>
+       <div class="preloader"><img src="img/splash-art.jpg" id="book"  width="100px;"></div>
       <landscape>
        
         <section id="splash">
@@ -126,6 +126,10 @@
 
 
     var loaded_slpash_img = false;
+
+    $( "#book" ).load(function() {
+ splash_img_loaded();
+});
 
       function splash_img_loaded(){
          loaded_slpash_img = true;
