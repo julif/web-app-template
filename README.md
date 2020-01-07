@@ -1,7 +1,7 @@
 
-# Webapp-template [v 0.10.1]
+# Webapp-template [v 0.10.2]
 
-readme de el webapp #0a0f1b
+readme de el webapp 
 
 ## Cosas por hacer
 
@@ -20,7 +20,9 @@ readme de el webapp #0a0f1b
 - [ ] menu principal ( opcional para algunos proyectos)
 
 ## changelog 
-* **[v 0.10.1]** `2020-1-5` 
+* **[v 0.10.2]** `2020-1-7` 
+- `fixed` responsive.js fue optimizado.
+* **[v 0.10.1]** `2020-1-6` 
  - `added` preloader con la imagen de splash art.
  - `added` funcion que revisa si la imagen del spash-art cargo, y en caso de no hacerlo durante 16 segundos actualiza la pagina
  - `added` la misma funcion revisa si la imagen cargo muestra la seccion splash-art
