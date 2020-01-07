@@ -143,6 +143,7 @@
    ["fullscreenchange", "webkitfullscreenchange", "mozfullscreenchange", "msfullscreenchange"].forEach(
      eventType => document.addEventListener(eventType, iniciar_splash(), false)
      );
+   $(document).is(":fullscreen") { iniciar_splash();}
 
 function iniciar() {      
 
@@ -246,6 +247,7 @@ if (window.matchMedia('(display-mode: fullscreen)').matches) {
           }
           </script>
           <script src="js/version.js"></script>
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script><!-- --- Jquery --- --> 
   </body>
  
 </html>
