@@ -77,6 +77,10 @@
 
 }
 
+#main-menu {
+    display: none;
+    background-color: red;
+}
     </style>
     <script>
       var loaded_slpash_img = false;
@@ -104,11 +108,16 @@
         </section><!-- splash -->
       <section id="splash-art">
         <div class="version" ></div>
-       
+        <button onclick="fadediv(splash_art, main_menu);">Click me</button>
       </section><!-- splash-art -->
+      <section id="main-menu"><!-- main-menu -->
+        main menu
+         <div class="version" ></div>
+      <section>
       </landscape>
       <portrait>
-         <div class="preloader"><img src="img/splash-art.jpg" onload="splash_img_loaded()"   width="100px"></div>
+        <!-- copia de el preloader solo para estar seguros -->
+         <div class="preloader"><img src="img/splash-art.jpg" onload="splash_img_loaded()"   width="100px"></div> 
         <section class="flex" style="color: black;text-align: center;">
           Please rotate your device! 
         </section>
@@ -117,28 +126,10 @@
     <script>
       var splash = document.getElementById("splash");
       var splash_art = document.getElementById("splash-art");
-
-
-
-/*   var items = "v.o.1",
-    divs = document.getElementsByClassName( 'version' );
-
-[].slice.call( divs ).forEach(function ( div ) {
-    div.innerHTML = items;
- */
-
+      var main_menu = document.getElementById("main-menu");
  
-    
     </script>
     <script>
-
-
-    
-
-//     $( "#book" ).load(function() {
-//  splash_img_loaded();
-// });
-// $("#book").on("load",splash_img_loaded(){} );
 
 
  var loaded_slpash_img = false;
@@ -151,11 +142,6 @@
    
   iniciar();
  
-
-   // ["fullscreenchange", "webkitfullscreenchange", "mozfullscreenchange", "msfullscreenchange"].forEach(
-   //   eventType => document.addEventListener(eventType, iniciar_splash(), false)
-   //   );
-   // $(document).is(":fullscreen") { iniciar_splash();}
 
 function iniciar() {      
 
@@ -173,15 +159,18 @@ if( plataform == "desktop" || plataform == "tablet landscape"|| plataform == "sm
       var img_splash_counter = 0;
       function iniciar_splash() {
 
-      
-          setInterval(function(){ 
+      var myVar = setInterval(myTimer, 4000)
+      function myTimer() {
+  
+
+  
             if (img_splash_counter>10) { 
               // alert("la aplicacion esta tomando demasiado tiempo para cargar, actualizando la app");
               // location.reload();
               window.location.reload(false); 
             }
 
-             if (loaded_slpash_img == true) { fadediv(splash, splash_art); }
+             if (loaded_slpash_img == true) { fadediv(splash, splash_art); clearInterval(myVar);}
 
              else if(loaded_slpash_img == false){
               //alert(" recargar ");
@@ -189,8 +178,12 @@ if( plataform == "desktop" || plataform == "tablet landscape"|| plataform == "sm
               console.log("carga de img_splash fallido N:"+img_splash_counter);
               iniciar_splash();
             }
+
+}
+
+       
          
-         }, 4000);
+        
 
        
         
@@ -198,6 +191,15 @@ if( plataform == "desktop" || plataform == "tablet landscape"|| plataform == "sm
       }//iniciar_splash
 
       
+
+
+
+
+      function go_to_main(){
+         fadediv(splash_art, main_menu);
+        // document.getElementById("splash-art").style.display="none";
+        // document.getElementById("main-menu").style.display="inherit";
+      }
       </script>
       <script>
       

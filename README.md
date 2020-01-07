@@ -1,5 +1,5 @@
 
-# Webapp-template [v 0.10.2.1]
+# Webapp-template [v 0.11]
 
 readme de el webapp 
 
@@ -20,6 +20,10 @@ readme de el webapp
 - [ ] menu principal ( opcional para algunos proyectos)
 
 ## changelog 
+* **[v 0.11]** `2020-1-7` 
+- `added` section main-menu.
+- `added` boton iniciar.
+- `fixed` ahora el Timer de iniciar_splash no se repite infinitamente.
 * **[v 0.10.2.1]** `2020-1-7` 
 - `fixed` arreglado el problema que impedia mostrar la app si se iniciaba en portrait y luego fullwiev.
 * **[v 0.10.2]** `2020-1-7` 
