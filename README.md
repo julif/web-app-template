@@ -21,6 +21,7 @@ readme de el webapp
 
 ## changelog 
 * **[v 0.10.2.1]** `2020-1-7` 
+- `fixed` arreglado el problema que impedia mostrar la app si se iniciaba en portrait y luego fullwiev.
 * **[v 0.10.2]** `2020-1-7` 
 - `fixed` responsive.js fue optimizado.
 * **[v 0.10.1]** `2020-1-6` 
