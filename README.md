@@ -1,5 +1,5 @@
 
-# Webapp-template [v 0.10.2]
+# Webapp-template [v 0.10.2.1]
 
 readme de el webapp 
 
@@ -20,6 +20,7 @@ readme de el webapp
 - [ ] menu principal ( opcional para algunos proyectos)
 
 ## changelog 
+* **[v 0.10.2.1]** `2020-1-7` 
 * **[v 0.10.2]** `2020-1-7` 
 - `fixed` responsive.js fue optimizado.
 * **[v 0.10.1]** `2020-1-6` 
