@@ -143,7 +143,7 @@
    ["fullscreenchange", "webkitfullscreenchange", "mozfullscreenchange", "msfullscreenchange"].forEach(
      eventType => document.addEventListener(eventType, iniciar_splash(), false)
      );
-   $(document).is(":fullscreen") { iniciar_splash();}
+   // $(document).is(":fullscreen") { iniciar_splash();}
 
 function iniciar() {      
 
@@ -203,6 +203,7 @@ if (window.matchMedia('(display-mode: fullscreen)').matches) {
     // set a variable to be used when calling something  
     // e.g. call Google Analytics to track standalone use 
     document.getElementById("full").style.display= "none";
+     iniciar_splash();
 
 } 
 
