@@ -79,7 +79,20 @@
 
 #main-menu {
     display: none;
-    background-color: red;
+    background-color: white;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+#splash-art_content{    display: grid;
+  width: 100%;
+    max-width: 40%;
+}
+@media only screen and (max-width: 1200px) {
+  #splash-art_content{    display: grid;
+  width: 100%;
+    max-width: 60%;
+}
 }
     </style>
     <script>
@@ -108,9 +121,18 @@
         </section><!-- splash -->
       <section id="splash-art">
         <div class="version" ></div>
-        <button onclick="fadediv(splash_art, main_menu)">Click me</button>
+        <div id="splash-art_content">
+          <img src="img/logo.png"  style="
+          width: 100%;
+      " >
+          <button onclick="fadediv(splash_art, main_menu)" style="margin-top: 10px;">Click me</button>
+        </div>
+       
+
+        
       </section><!-- splash-art -->
       <section id="main-menu"><!-- main-menu -->
+        
         main menu
          <div class="version" ></div> 
  </section><!-- main-menu -->
@@ -160,7 +182,7 @@ if( plataform == "desktop" || plataform == "tablet landscape"|| plataform == "sm
       var img_splash_counter = 0;
       function iniciar_splash() {
 
-      var myVar = setInterval(myTimer, 4000)
+      var myVar = setInterval(myTimer, 3000)
       function myTimer() {
   
 
