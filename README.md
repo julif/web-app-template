@@ -22,6 +22,7 @@ readme de el webapp
 ## changelog 
 * **[v 0.12]** `2020-1-8` 
 - `changed` ahora la imagen de splash esta dividida entre logo y fondo.
+- `added` imagen de fondo a la seccion portrait.
 * **[v 0.11]** `2020-1-7` 
 - `added` section main-menu.
 - `added` boton iniciar.
