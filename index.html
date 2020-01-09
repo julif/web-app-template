@@ -221,7 +221,22 @@ if (window.matchMedia('(display-mode: fullscreen)').matches) {
 } 
 
 
+if (window.matchMedia('(display-mode: standalone)').matches) {
+  console.log('display-mode is standalone');
+  alert('display-mode is standalone');
+}
 
+
+$(document).ready(function () {
+    if(window.location.contains("index.html?launcher=true")) // This doesn't work, any suggestions?
+    {
+         alert("la aplicacion esta instalada");
+    }
+});
+
+
+
+// beforeinstallprompt funciona solo si la app no fue instalada ( en teoria)
         window.addEventListener('beforeinstallprompt', (e) => {
           // Prevent Chrome 67 and earlier from automatically showing the prompt
           e.preventDefault();
