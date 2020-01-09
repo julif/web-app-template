@@ -79,7 +79,20 @@
 
 #main-menu {
     display: none;
-    background-color: red;
+    background-color: white;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+#splash-art_content{    display: grid;
+  width: 100%;
+    max-width: 40%;
+}
+@media only screen and (max-width: 1200px) {
+  #splash-art_content{    display: grid;
+  width: 100%;
+    max-width: 60%;
+}
 }
     </style>
     <script>
@@ -108,17 +121,34 @@
         </section><!-- splash -->
       <section id="splash-art">
         <div class="version" ></div>
-        <button onclick="fadediv(splash_art, main_menu)">Click me</button>
+        <div id="splash-art_content">
+          <img src="img/logo.png"  style="
+          width: 100%;
+      " >
+          <button onclick="fadediv(splash_art, main_menu)" style="margin-top: 10px;">Click me</button>
+        </div>
+       
+
+        
       </section><!-- splash-art -->
       <section id="main-menu"><!-- main-menu -->
+        
         main menu
          <div class="version" ></div> 
+ </section><!-- main-menu -->
+
       </landscape>
       <portrait>
         <!-- copia de el preloader solo para estar seguros -->
          <div class="preloader"><img src="img/splash-art.jpg" onload="splash_img_loaded()"   width="100px"></div> 
-        <section class="flex" style="color: black;text-align: center;">
-          Please rotate your device! 
+        <section class="flex" style="color: black;text-align: center;  background-image: url(img/portrait_background.png);    background-position: center;
+        background-size: cover;">
+         <p style="
+         background-color: #000000d9;
+         padding: 8px;
+         color: white;
+     "> <img src="img/rotate.png"    style="width: 200px;height: auto;" ></br>
+     Please rotate your device! </p>
         </section>
       </portrait>
     </section>
@@ -158,7 +188,7 @@ if( plataform == "desktop" || plataform == "tablet landscape"|| plataform == "sm
       var img_splash_counter = 0;
       function iniciar_splash() {
 
-      var myVar = setInterval(myTimer, 4000)
+      var myVar = setInterval(myTimer, 3000)
       function myTimer() {
   
 
