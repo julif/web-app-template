@@ -20,6 +20,8 @@ readme de el webapp
 - [ ] menu principal ( opcional para algunos proyectos)
 
 ## changelog 
+* **[v 0.12.1]** `2020-1-9` 
+- `added` agrege 3 funciones javascript para ver si puedo detectar cuando la aplicacion esta instalada.
 * **[v 0.12]** `2020-1-8` 
 - `changed` ahora la imagen de splash esta dividida entre logo y fondo.
 - `added` imagen de fondo a la seccion portrait.
