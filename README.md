@@ -1,5 +1,5 @@
 
-# Webapp-template [v 0.12]
+# Webapp-template [v 0.12.2]
 
 readme de el webapp 
 
@@ -20,6 +20,8 @@ readme de el webapp
 - [ ] menu principal ( opcional para algunos proyectos)
 
 ## changelog 
+* **[v 0.12.2]** `2020-1-9` 
+- `added` check_if_instaled.js revisa si la app esta instalada en desktop.
 * **[v 0.12.1]** `2020-1-9` 
 - `added` agrege 3 funciones javascript para ver si puedo detectar cuando la aplicacion esta instalada.
 * **[v 0.12]** `2020-1-8` 
