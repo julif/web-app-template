@@ -78,6 +78,72 @@
     align-items: center;
 }
 
+
+
+
+
+
+
+
+
+
+#ad2hs-prompt-container{
+    background-color: white;
+    color: black;
+    /* text-align: center; */
+    width: 600px;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 100000000;
+   
+   
+    /* display: none; */
+}
+#ad2hs-prompt-container-content{ display: flex; position: relative;}
+#ad2hs-close{ 
+  position: absolute; 
+  top: -5px;
+  right: 0px; 
+  cursor: pointer; 
+  /* background-color: red; */
+ 
+}
+
+
+#ad2hs-prompt-container-content p{ 
+  margin: 0px;
+  margin-bottom: 3px;
+} 
+/* #ad2hs-logo-container{background-color: red;} */
+#ad2hs-name-description-container{ margin-left: 15px; }
+#ad2hs-prompt-container-footer{text-align: right;}
+#ad2hs-button{
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 800px) {
+  #ad2hs-prompt-container {
+    width: 100%;
+    width: 96%;
+    width: -webkit-fill-available;
+    bottom: 0px;
+    right: 0px;
+  }
+  #ad2hs-close {
+    top: 0px;
+    right: 5px;
+  }
+}
+
     </style>
     <script>
       var loaded_slpash_img = false;
@@ -89,6 +155,17 @@
     
   </head>
   <body onresize="responsive(); iniciar();">
+    <div id="ad2hs-prompt-container">
+      <div id="ad2hs-prompt-container-content"> 
+        <div id="ad2hs-logo-container"> <img src="img/apple-touch-icon-60x60.png"> </div> 
+        <div id="ad2hs-name-description-container"> 
+          <div id="ad2hs-close"> <i  style="color: #b7b6b6" class="fas fa-times"></i> </div>
+          <b><p> Webapp </p></b>
+          <p style="color: #b7b6b6;font-size: 15px;"> Julif.github.com </p>
+        </div> 
+      </div> 
+       <div id="ad2hs-prompt-container-footer"> <button id="ad2hs-button">Add to home screen</button> </div> 
+    </div> 
     <section id="contenedor">
       <div id="full">
         <button id="fullwiev" onclick="lock('landscape')" >
@@ -218,11 +295,7 @@ if( plataform == "desktop" || plataform == "tablet landscape"|| plataform == "sm
       
   
       </script>
-      <script>
-        let deferredPrompt;
-        const addBtn = document.querySelector('.add-button');
-        // addBtn.style.display = 'none';
-        </script>
+    
       <script>
 
 if (window.matchMedia('(display-mode: fullscreen)').matches) {  
@@ -239,25 +312,35 @@ if (window.matchMedia('(display-mode: fullscreen)').matches) {
 
 
 
+const ad2hs_close_btn = document.querySelector('#ad2hs-close');
+const ad2hs_btn = document.querySelector('#ad2hs-button');
+const ad2hs_prompt_container = document.querySelector('#ad2hs-prompt-container');
 
+ad2hs_close_btn.addEventListener('click', (e) => {
+   
+  ad2hs_prompt_container.style.display = 'none';
+   
+  });
 
 
 // beforeinstallprompt funciona solo si la app no fue instalada ( en teoria)
 
+
+
         window.addEventListener('beforeinstallprompt', (e) => {
-          window.alert('la app no fue instalada');
+          // window.alert('la app no fue instalada');
           // Prevent Chrome 67 and earlier from automatically showing the prompt
           e.preventDefault();
           // Stash the event so it can be triggered later.
           deferredPrompt = e;
           // Update UI to notify the user they can add to home screen
-          addBtn.style.display = 'block';
+          ad2hs_prompt_container.style.display = 'block';
           showAddToHomeScreen();
         
         
           addBtn.addEventListener('click', (e) => {
             // hide our user interface that shows our A2HS button
-            addBtn.style.display = 'none';
+            ad2hs_prompt_container.style.display = 'none';
             // Show the prompt
             deferredPrompt.prompt();
             // Wait for the user to respond to the prompt
